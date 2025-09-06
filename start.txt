@@ -1,0 +1,90 @@
+Welcome!
+This Machine Learning with Python course dives into the basics of machine learning using an approachable and well-known programming language. You'll learn about Supervised vs. Unsupervised Learning, look into how Statistical Modeling relates to Machine Learning, and do a comparison of each. Look at real-life examples of Machine learning and how it affects society in ways you may not have guessed!
+
+Please note that this course has some hands-on labs which requires that you have working knowledge of Python programming language. If you don't feel you have sufficient skill in Python programming, I recommend you to take the Python for Data Science and Data Analysis with Python courses.
+
+IBM Skills Network Team
+-------------------------------------------
+2-Prerequisites
+Python for Data Science
+Recommended skills prior to taking this course
+Data Analysis with Python
+-----------------------------------------------
+3.Learning Objective-
+
+Learning Objectives
+In this course you will learn about:
+
+How statistical modeling relates to Machine Learning and do a comparison of each.
+Real-life examples of Machine Learning and how it affects society in ways you may not have guessed!
+In the labs: use Python libraries for Machine Learning, such as scikit-learn.
+
+Explore many algorithms and models:
+Popular algorithms: Regression, Classification, and Clustering
+Recommender systems: Content-Based and Collaborative Filtering
+Popular models: Train/Test Split, Gradient Descent, and Mean Squared Error
+Get ready to do more learning than your machine!
+
+-----------------------------------------------
+4.Syllabus-
+
+Syllabus
+Module 1: Introduction to Machine Learning
+In this module, you will be introduced to various real world applications of machine learning, such as those in the healthcare, telecommunications and financial industries. You will also learn about the Python libraries that can be used to implement machine learning models and be introduced to the supervised and unsupervised algorithms.
+
+Module 2: Regression
+In this module, you will be introduced to simple linear, multiple linear and non-linear regression and their applications. You will also learn about model evaluation metrics for regression such as mean absolute error and mean squared error, as well as learning about two types of evaluation approaches: training and testing on the same dataset and train/test split. You will also have the opportunity to apply these methods in hands-on labs.
+
+Module 3: Classification
+In this module, you'll learn about classification algorithms such as K-Nearest Neighbors, Decision Trees, Logistic Regression and Support Vector Machine. You will also learn about various evaluation metrics for classifiers such as the Jaccard index, F1-score and Log Loss.
+
+Module 4: Clustering
+In this module, you will learn about clustering approaches such as K-Means Clustering, Hierarchical Clustering and Density-Based Spatial Clustering of Applications with Noise (DBSCAN). Clustering can be used for customer segmentation or grouping weather stations.Jaccard index, F1-score and Log Loss.
+
+Module 5: Recommender Systems
+In this week, you will learn about recommender systems. You will learn about the two main types of recommender systems: content-based and collaborative filtering, and you will have the opportunity to create these systems in the hands-on labs.
+
+-------------------------------------------------------
+5.Grading Scheme
+
+The minimum passing mark for the course is 70% with the following weights:
+50% - All Review Questions 
+50% - The Final Exam
+Though Review Questions and the Final Exam have a passing mark of 50% respectively, the only grade that matters is the overall grade for the course.
+Review Questions have no time limit. You are encouraged to review the course material to find the answers.  Please remember that the Review Questions are worth 50% of your final mark.
+The final exam has a 1 hour time limit.
+Attempts are per question in both, the Review Questions and the Final Exam:
+One attempt - For True/False questions
+Two attempts - For any question other than True/False
+There are no penalties for incorrect attempts.
+Clicking the "Final Check" button when it appears, means your submission is FINAL.  You will NOT be able to resubmit your answer for that question ever again.
+Check your grades in the course at any time by clicking on the "Progress" tab.
+
+--------------------------------------------------------
+6.Copyrights and Trademarks
+IBM®, the IBM logo, and ibm.com® are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. A current list of IBM trademarks is available on the Web at “Copyright and trademark information” at: ibm.com/legal/copytrade.shtml
+
+References to IBM products or services do not imply that IBM intends to make them available in all countries in which IBM operates.
+
+Netezza®, Netezza Performance Server®, NPS® are trademarks or registered trademarks of IBM International Group B.V., an IBM Company.
+
+Linux is a registered trademark of Linus Torvalds in the United States, other countries, or both.
+
+Microsoft, Windows, Windows NT, and the Windows logo are trademarks of Microsoft Corporation in the United States, other countries, or both.
+
+Java and all Java-based trademarks and logos are trademarks or registered trademarks of Oracle and/or its affiliates.
+
+UNIX is a registered trademark of The Open Group in the United States and other countries.
+
+Other product, company or service names may be trademarks or service marks of others.
+----------------------------------------------------------------
+7.
+Learning Objectives
+In this lesson you will learn about:
+Machine Learning applications 
+Python libraries for Machine Learning
+Supervised vs Unsupervised Learning 
+-----------------------------------------------------------------------
+8.
+
+-------------------------------------------------------------------
