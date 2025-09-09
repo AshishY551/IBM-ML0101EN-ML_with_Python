@@ -1,22 +1,26 @@
-IBM-ML0101EN-ML_with_Python
-Tags
+feat(ml-libraries): Add Python ML libraries overview and scikit-learn examples
 
-Learning Domain-
-1.Technical skills 
-2.Artificial Intelligence
+- Added slide on Python libraries for machine learning:
+  - Pandas
+  - NumPy
+  - SciPy
+  - Matplotlib
+  - Scikit-learn
+  - Python (core)
 
-Learning Domain Primary
-3.Artificial intelligence
+- Introduced scikit-learn overview:
+  - Free software ML library
+  - Supports classification, regression, clustering
+  - Works with NumPy & SciPy
+  - Great documentation and easy to implement
+  - Covered workflow: Data preprocessing → Train/Test split → Algorithm setup → Model fitting → Prediction → Evaluation → Model export
 
-Lightcast Skills Taxonomy-
-4.Python (Programming Language) Skill
-5.Machine Learning Skill
+- Added scikit-learn functions example:
+  - Preprocessing with StandardScaler
+  - Dataset splitting using train_test_split
+  - Model training with SVM (SVC)
+  - Predictions with .predict()
+  - Evaluation using confusion matrix
 
-
-Welcome!
-This Machine Learning with Python course dives into the basics of machine learning using an approachable and well-known programming language. You'll learn about Supervised vs. Unsupervised Learning, look into how Statistical Modeling relates to Machine Learning, and do a comparison of each. Look at real-life examples of Machine learning and how it affects society in ways you may not have guessed!
-
-Please note that this course has some hands-on labs which requires that you have working knowledge of Python programming language. If you don't feel you have sufficient skill in Python programming, I recommend you to take the Python for Data Science and Data Analysis with Python courses.
-
-IBM Skills Network Team
+- Included explanation on confusion matrix for model accuracy
 
