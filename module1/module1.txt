@@ -89,3 +89,40 @@ Also, you can use different metrics to evaluate your model accuracy, for example
 confusion matrix to show the results.
 And finally, you save your model.
 =====
+1.3-Supervised vs Unsupervised 
+
+1.3.1-
+We’ll be supervising a machine learning model that might be able to produce
+classification regions
+
+we supervise a machine learning model-
+by “teaching” the model.
+That is, we load the model with knowledge so that we can have it predict future instances.
+
+**We teach the model by training it with some data from a labeled dataset.
+It’s important to note that the data is labeled.
+
+example
+-We teach the model by training it with some data from a labeled dataset.
+It’s important to note that the data is labeled.
+
+-
+When dealing with machine learning, the most commonly used data is numeric.
+The second is categorical… that is, it’s non-numeric, because it contains characters
+rather than numbers.
+In this case, it’s categorical because this dataset is made for Classification.
+
+There are two types of Supervised Learning techniques.
+They are: classification and regression.
+Classification is the process of predicting a discrete class label or category.
+Regression is the process of predicting a continuous value as opposed to predicting
+a categorical value in Classification.
+
+Example-
+It is related to Co2 emissions of different cars.
+It includes Engine size, Cylinders, Fuel Consumption and Co2 emission of various models of automobiles.
+Given this dataset, you can use regression to predict the Co2 emission of a new car by
+using other fields, such as Engine size or number of Cylinders.
+
+
+

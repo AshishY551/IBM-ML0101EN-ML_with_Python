@@ -1,26 +1,16 @@
-feat(ml-libraries): Add Python ML libraries overview and scikit-learn examples
+feat(supervised-learning): Add explanation of supervised ML with classification & regression examples
 
-- Added slide on Python libraries for machine learning:
-  - Pandas
-  - NumPy
-  - SciPy
-  - Matplotlib
-  - Scikit-learn
-  - Python (core)
+- Added content and visuals for supervised learning
+  - Explained concept: "We teach the model" using labeled datasets
+  - Highlighted importance of labeled data in training and prediction
+  - Covered common data types used in ML: numeric and categorical
+  - Provided supervised learning techniques overview:
+    - Classification → predicting discrete categories
+    - Regression → predicting continuous values
 
-- Introduced scikit-learn overview:
-  - Free software ML library
-  - Supports classification, regression, clustering
-  - Works with NumPy & SciPy
-  - Great documentation and easy to implement
-  - Covered workflow: Data preprocessing → Train/Test split → Algorithm setup → Model fitting → Prediction → Evaluation → Model export
+- Included practical examples:
+  - Classification dataset for categorical prediction
+  - Regression example using automobile dataset (Engine size, Cylinders, Fuel Consumption → CO2 emissions)
 
-- Added scikit-learn functions example:
-  - Preprocessing with StandardScaler
-  - Dataset splitting using train_test_split
-  - Model training with SVM (SVC)
-  - Predictions with .predict()
-  - Evaluation using confusion matrix
-
-- Included explanation on confusion matrix for model accuracy
-
+Why:
+This commit introduces the fundamentals of supervised learning, clarifies the distinction between classification and regression, and provides real-world examples to connect theory with practice.
