@@ -124,5 +124,43 @@ It includes Engine size, Cylinders, Fuel Consumption and Co2 emission of various
 Given this dataset, you can use regression to predict the Co2 emission of a new car by
 using other fields, such as Engine size or number of Cylinders.
 
+----
+Supervised Learning techniques
 
+There are two types of Supervised Learning techniques.
+
+They are: classification and regression.
+Classification is the process of predicting a discrete class label or category.
+Regression is the process of predicting a continuous value as opposed to predicting
+a categorical value in Classification.
+
+We do not supervise the model, but we let the model work on its own to discover information
+that may not be visible to the human eye.
+It means, the unsupervised algorithm trains on the dataset, and draws conclusions on UNLABELED
+data.
+
+
+--
+Generally speaking, unsupervised learning has more difficult algorithms than supervised
+learning, since we know little to no information about the data, or the outcomes that are to
+be expected.
+Dimension reduction, Density estimation, Market basket analysis and Clustering are the most
+widely used unsupervised machine learning techniques.
+Dimensionality Reduction and/or feature selection play a large role in this by reducing redundant
+features to make the classification easier.
+
+-
+Market basket analysis is a modelling technique based upon the theory that if you buy a certain
+group of items, you’re more likely to buy another group of items.
+Density estimation is a very simple concept that is mostly used to explore the data to
+find some structure within it.
+And finally, clustering.
+Clustering is considered to be one of the most popular unsupervised machine learning
+techniques used for grouping data points or objects that are somehow similar.
+
+Cluster analysis has many applications in different domains, whether it be a bank’s
+desire to segment its customers based on certain characteristics, or helping an individual
+to organize and group his/her favourite types of music!
+Generally speaking, though, Clustering is used mostly for: Discovering structure, Summarization,
+and Anomaly detection.
 

@@ -1,16 +1,27 @@
-feat(supervised-learning): Add explanation of supervised ML with classification & regression examples
+feat(ml-basics): Add detailed explanation of Supervised vs Unsupervised Learning with examples
 
-- Added content and visuals for supervised learning
+- Introduced Supervised Learning:
   - Explained concept: "We teach the model" using labeled datasets
-  - Highlighted importance of labeled data in training and prediction
-  - Covered common data types used in ML: numeric and categorical
-  - Provided supervised learning techniques overview:
+  - Showed cancer dataset example with attributes, features, observations
+  - Clarified data types: numerical vs categorical
+  - Covered two main techniques:
     - Classification → predicting discrete categories
     - Regression → predicting continuous values
+  - Provided regression example using automobile dataset (Engine size, Cylinders, Fuel Consumption → CO2 emissions)
 
-- Included practical examples:
-  - Classification dataset for categorical prediction
-  - Regression example using automobile dataset (Engine size, Cylinders, Fuel Consumption → CO2 emissions)
+- Introduced Unsupervised Learning:
+  - Defined as training on unlabeled data without direct supervision
+  - Highlighted common techniques:
+    - Clustering (grouping similar data points)
+    - Dimensionality Reduction / Feature Selection
+    - Density Estimation (finding structure in data)
+    - Market Basket Analysis (associative rules for itemsets)
+  - Discussed real-world applications: customer segmentation, anomaly detection, music grouping
+
+- Compared Supervised vs Unsupervised Learning:
+  - Supervised → labeled data, classification & regression
+  - Unsupervised → unlabeled data, clustering & exploratory methods
+  - Highlighted differences in evaluation methods, control, and complexity
 
 Why:
-This commit introduces the fundamentals of supervised learning, clarifies the distinction between classification and regression, and provides real-world examples to connect theory with practice.
+This commit expands the ML fundamentals module by adding a structured and practical explanation of supervised vs unsupervised learning, with dataset-based examples, techniques, and real-world applications—providing learners with a strong conceptual foundation before diving into algorithms.
