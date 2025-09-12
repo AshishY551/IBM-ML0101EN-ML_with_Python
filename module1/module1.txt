@@ -164,3 +164,56 @@ to organize and group his/her favourite types of music!
 Generally speaking, though, Clustering is used mostly for: Discovering structure, Summarization,
 and Anomaly detection.
 
+---------------------------------------------------
+======
+Graded Review Questions--
+
+--
+Review Question 1
+1/1 point (graded)
+Machine Learning uses algorithms that can learn from data without relying on explicitly programmed methods.
+
+True
+
+False
+correct
+Submit
+You have used 1 of 1 attemptSome problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point)Review
+Review Question 2
+1/1 point (graded)
+Which are the two types of supervised learning techniques?
+
+Classification and Clustering
+
+Classification and K-Means
+
+Regression and Clustering
+
+Regression and Partitioning
+
+Classification and Regression
+correct
+Submit
+You have used 1 of 1 attemptSome problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point)Review
+Review Question 3
+1/1 point (graded)
+Which of the following statements best describes the Python scikit library?
+
+A library for scientific and high-performance computation.
+
+A collection of algorithms and tools for machine learning.
+
+A popular plotting package that provides 2D plotting as well as 3D plotting.
+
+A library that provides high-performance, easy to use data structures.
+
+A collection of numerical algorithms and domain-specific toolboxes.
+correct
+SaveSave your answer
+Submit
+You have used 1 of 2 attemptsSome problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
+Correct (1/1 point)
+
+=======
