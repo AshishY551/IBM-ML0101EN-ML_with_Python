@@ -1,19 +1,22 @@
-docs: add regression learning objectives and intro notes
+git commit -m "📘 Add Regression Learning Module  
 
-- Added detailed learning objectives covering:
-  • Regression Algorithms
-  • Model Evaluation (Overfitting & Underfitting)
-  • Understanding Evaluation Models
-  • Simple Linear Regression
+- Added detailed notes on Regression fundamentals  
+  • Definition: predicting continuous values (y) using independent variables (x)  
+  • Differentiation of dependent vs. independent variables  
+  • Role of categorical & continuous predictors  
 
-- Documented "Intro to Regression" with focus on:
-  • Problem statement: predicting CO2 emissions using EngineSize & Cylinders
-  • Definition: regression as prediction of continuous values
-  • Clarification of variable types:
-      - Dependent variable (y) as target/final goal
-      - Independent variables (x) as explanatory factors
-  • Regression model: relationship of y to function of x
-  • Key point: dependent variable must be continuous, not discrete
-  • Independent variables can be categorical or continuous
+- Documented Types of Regression  
+  • Simple Regression (linear & non-linear)  
+  • Multiple Regression (linear & non-linear)  
+  • Examples: CO2 emission prediction using EngineSize & Cylinders  
 
-- Improved clarity, formatting, and professional tone for better readability.
+- Added Applications of Regression  
+  • Sales prediction (based on age, education, experience)  
+  • Psychology (satisfaction prediction)  
+  • Real-estate (house price estimation)  
+  • Employment income prediction (hours, education, age, etc.)  
+
+- Included Regression Algorithms Overview  
+  • Ordinal, Poisson, Forest-based, Polynomial, Lasso, Ridge  
+  • Bayesian, Neural Network, Decision Tree, Boosted Trees, KNN  
+
