@@ -1,17 +1,19 @@
-chore(module1): Complete graded review questions and finalize Module 1
+docs: add regression learning objectives and intro notes
 
-- Successfully answered graded review questions:
-  1. Confirmed ML definition → algorithms that learn from data without explicit programming
-  2. Identified two supervised learning techniques → Classification and Regression
-  3. Described scikit-learn → collection of algorithms and tools for machine learning
+- Added detailed learning objectives covering:
+  • Regression Algorithms
+  • Model Evaluation (Overfitting & Underfitting)
+  • Understanding Evaluation Models
+  • Simple Linear Regression
 
-- Scored 100% (1/1 on each question) with full correctness
-- Marked completion of all quizzes and exercises for Module 1
-- Module 1 now fully covered:
-  - Python ML libraries (NumPy, Pandas, Matplotlib, SciPy, Scikit-learn)
-  - Scikit-learn usage and functions
-  - Supervised vs Unsupervised learning (concepts, techniques, examples)
-  - Graded Review Questions ✅
+- Documented "Intro to Regression" with focus on:
+  • Problem statement: predicting CO2 emissions using EngineSize & Cylinders
+  • Definition: regression as prediction of continuous values
+  • Clarification of variable types:
+      - Dependent variable (y) as target/final goal
+      - Independent variables (x) as explanatory factors
+  • Regression model: relationship of y to function of x
+  • Key point: dependent variable must be continuous, not discrete
+  • Independent variables can be categorical or continuous
 
-Why:
-This commit documents the successful completion of Module 1 including both conceptual lessons and graded assessments, establishing a solid foundation before progressing to advanced ML modules.
+- Improved clarity, formatting, and professional tone for better readability.
