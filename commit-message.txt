@@ -1,22 +1,37 @@
-git commit -m "📘 Add Regression Learning Module  
+📊 Add Linear Regression Introduction & Topology (Module 2.6)
 
-- Added detailed notes on Regression fundamentals  
-  • Definition: predicting continuous values (y) using independent variables (x)  
-  • Differentiation of dependent vs. independent variables  
-  • Role of categorical & continuous predictors  
+- Added high-level introduction to Linear Regression:
+  • Beginner-friendly, no prior linear algebra required
+  • Explained dataset (Engine Size, Cylinders, Fuel Consumption, CO₂ Emissions)
+  • Motivated regression by predicting CO₂ emissions from Engine Size
 
-- Documented Types of Regression  
-  • Simple Regression (linear & non-linear)  
-  • Multiple Regression (linear & non-linear)  
-  • Examples: CO2 emission prediction using EngineSize & Cylinders  
+- Covered Linear Regression fundamentals:
+  • Defined independent (x) and dependent (y) variables
+  • Highlighted requirement: dependent variable must be continuous
+  • Clarified independent variables can be categorical or continuous
 
-- Added Applications of Regression  
-  • Sales prediction (based on age, education, experience)  
-  • Psychology (satisfaction prediction)  
-  • Real-estate (house price estimation)  
-  • Employment income prediction (hours, education, age, etc.)  
+- Introduced types of Linear Regression:
+  • Simple Linear Regression (1 independent variable → y)
+  • Multiple Linear Regression (Engine Size + Cylinders → y)
 
-- Included Regression Algorithms Overview  
-  • Ordinal, Poisson, Forest-based, Polynomial, Lasso, Ridge  
-  • Bayesian, Neural Network, Decision Tree, Boosted Trees, KNN  
+- Explained regression line & formula:
+  • ŷ = θ0 + θ1x1 for simple linear regression
+  • θ0 → intercept, θ1 → slope/gradient (coefficients)
+  • Scatterplots to visualize linear relation between x & y
 
+- Discussed model fitting:
+  • Error defined as residual (distance from point to regression line)
+  • Mean Squared Error (MSE) introduced as loss function
+  • Objective: minimize MSE by finding optimal θ0, θ1
+
+- Added context on prediction accuracy:
+  • Example: predicted CO₂ = 340 vs actual 250 → 90-unit error
+  • Residual errors show model fit quality
+
+- Highlighted approaches to parameter estimation:
+  • Mathematical solution (closed-form)
+  • Optimization-based methods (iterative updates)
+
+✅ Makes regression approachable with dataset examples  
+✅ Explains both intuition & mathematical formulation  
+✅ Sets foundation for deeper dive into evaluation metrics & optimization
