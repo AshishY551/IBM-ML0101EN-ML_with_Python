@@ -1,37 +1,24 @@
-📊 Add Linear Regression Introduction & Topology (Module 2.6)
+📐 Add Linear Regression parameter estimation notes + example (2.6.4Estimating Parameters)
 
-- Added high-level introduction to Linear Regression:
-  • Beginner-friendly, no prior linear algebra required
-  • Explained dataset (Engine Size, Cylinders, Fuel Consumption, CO₂ Emissions)
-  • Motivated regression by predicting CO₂ emissions from Engine Size
+- Added detailed explanation of parameter estimation in Simple Linear Regression
+  • Option 1: Mathematical approach  
+  • Option 2: Optimization approach  
 
-- Covered Linear Regression fundamentals:
-  • Defined independent (x) and dependent (y) variables
-  • Highlighted requirement: dependent variable must be continuous
-  • Clarified independent variables can be categorical or continuous
+- Documented step-by-step calculation of coefficients (θ₀ and θ₁):
+  • θ₁ (slope) computed using mean-based formula across dataset values → θ₁ = 39  
+  • θ₀ (intercept/bias) derived from dataset averages → θ₀ = 125.74  
 
-- Introduced types of Linear Regression:
-  • Simple Linear Regression (1 independent variable → y)
-  • Multiple Linear Regression (Engine Size + Cylinders → y)
+- Integrated clear polynomial representation of regression line:
+  • Co2Emission = θ₀ + θ₁ × EngineSize  
+  • Final equation: Co2Emission = 125 + 39 × EngineSize  
 
-- Explained regression line & formula:
-  • ŷ = θ0 + θ1x1 for simple linear regression
-  • θ0 → intercept, θ1 → slope/gradient (coefficients)
-  • Scatterplots to visualize linear relation between x & y
+- Worked example:
+  • EngineSize = 2.4 → Co2Emission ≈ 218.6 (prediction for record #9)  
 
-- Discussed model fitting:
-  • Error defined as residual (distance from point to regression line)
-  • Mean Squared Error (MSE) introduced as loss function
-  • Objective: minimize MSE by finding optimal θ0, θ1
+- Added contextual insights:
+  • Why Linear Regression is widely used (fast, interpretable, no hyperparameter tuning)  
+  • Distinction between bias coefficient (θ₀) and feature coefficient (θ₁)  
 
-- Added context on prediction accuracy:
-  • Example: predicted CO₂ = 340 vs actual 250 → 90-unit error
-  • Residual errors show model fit quality
-
-- Highlighted approaches to parameter estimation:
-  • Mathematical solution (closed-form)
-  • Optimization-based methods (iterative updates)
-
-✅ Makes regression approachable with dataset examples  
-✅ Explains both intuition & mathematical formulation  
-✅ Sets foundation for deeper dive into evaluation metrics & optimization
+✅ Strengthens module on Regression with theoretical + applied learning  
+✅ Ensures reproducibility of parameter derivation process  
+✅ Enhances text file with polished, structured, and interpretable learning notes.

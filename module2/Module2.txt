@@ -172,3 +172,63 @@ Now, the question is, how to find θ0 and θ1 in such a way that it minimizes th
 How can we find such a perfect line? Or, said another way, how should we find the
 best parameters for our line? Should we move the line a lot randomly and
 calculate the MSE value every time, and choose the minimum one?
+
+------------------------------------------------
+2.6.3-Estimating parameters of linear regression::
+
+Option 1 - We can use a mathematic approach. Or, Option 2 - We can use an optimization
+approach.
+Let’s see how we can easily use a mathematic formula to find the θ0 and θ1.
+As mentioned before, θ0 and θ1, in the simple linear regression, are the coefficients of
+the fit line. We can use a simple equation to estimate these
+coefficients. That is, given that it’s a simple linear
+regression, with only 2 parameters, and knowing that θ0 and θ1 are the intercept and slope
+of the line, we can estimate them directly from our data.
+It requires that we calculate the mean of the independent and dependent or target columns,
+from the dataset. Notice that all of the data must be available
+to traverse and calculate the parameters. It can be shown that the intercept and slope
+can be calculated using these equations. We can start off by estimating the value for θ1.
+This is how you can find the slope of a line
+based on the data. x ̅ is the average value for the engine size
+in our dataset. Please consider that we have 9 rows here,
+row 0 to 8. First, we calculate the average of x1 and
+average of y. Then we plug it into the slope equation, to
+find θ1. The xi and yi in the equation refer to the
+fact that we need to repeat these calculations across all values in our dataset and i refers
+to the i’th value of x or y.
+Applying all values, we find θ1=39; it is our second parameter.
+It is used to calculate the first parameter, which is the intercept of the line.
+Now, we can plug θ1 into the line equation to find θ0.
+It is easily calculated that θ0=125.74. So, these are the two parameters for the line,
+where θ0 is also called the bias coefficient and θ1 is the coefficient for the Co2 Emission
+column. As a side note, you really don’t need to
+remember the formula for calculating these parameters, as most of the libraries used
+for machine learning in Python, R, and Scala can easily find these parameters for you.
+But it’s always good to understand how it works.
+Now, we can write down the polynomial of the line.
+So, we know how to find the best fit for our data, and its equation.
+Now the question is: "How can we use it to predict the emission of a new car based on
+its engine size?"
+After we found the parameters of the linear equation, making predictions is as simple
+as solving the equation for a specific set of inputs.
+Imagine we are predicting Co2 Emission (y) from EngineSize (x) for the Automobile in record
+number 9. Our linear regression model representation
+for this problem would be: y ̂ = θ0 + θ1 x1.
+Or if we map it to our dataset, it would be Co2Emission = θ0 + θ1 EngineSize.
+As we saw, we can find θ0, θ1 using the equations that we just talked about.
+Once found, we can plug in the equation of the linear model.
+For example, let’s use θ0=125 and θ1=39. So, we can rewrite the linear model as 𝐶𝑜2𝐸𝑚𝑖𝑠𝑠𝑖𝑜𝑛=125+39𝐸𝑛𝑔𝑖𝑛𝑒𝑆𝑖𝑧𝑒.
+Now, let’s plug in the 9th row of our dataset and calculate the Co2 Emission for a car with
+an EngineSize of 2.4. So Co2Emission = 125 + 39 × 2.4.
+Therefore, we can predict that the Co2 Emission for this specific car would be 218.6.
+Let’s talk a bit about why Linear Regression is so useful.
+Quite simply, it is the most basic regression to use and understand.
+In fact, one reason why Linear Regression is so useful is that it’s fast!
+It also doesn’t require tuning of parameters. So, something like tuning the K parameter
+in K-Nearest Neighbors or the learning rate in Neural Networks isn’t something to worry
+about. Linear Regression is also easy to understand
+and highly interpretable.
+-------------------------------------
+
+
+
