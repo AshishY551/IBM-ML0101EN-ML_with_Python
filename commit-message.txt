@@ -1,22 +1,15 @@
-📊 Add Module2.3: Multiple Linear Regression Content & Illustrative Images
+📈 Update Module2.3: Optimized Parameters & MSE Explanation + New Illustrative Images
 
-- Added Module2.3.txt covering detailed explanation of Multiple Linear Regression (MLR):
-  • Distinction between simple and multiple linear regression
-  • Applications: 
-      - Assessing strength of independent variable effects on dependent variable
-      - Predicting changes in dependent variable due to independent variables
-  • Concept of predicting continuous variables using multiple predictors
-  • Mathematical formulation: ŷ = θ₀ + θ₁x₁ + θ₂x₂ + … + θₙxₙ
-  • Vector/matrix representation (θᵀx) for multi-dimensional feature space
-  • Explanation of hyper-plane fitting for multiple features
-  • Role of intercept (bias) and parameter vector in MLR
-  • Practical example: predicting CO₂ emissions using Engine Size, Cylinders, Fuel Consumption
-  • Emphasis on significance of variables and predictive power
+- Updated Module2.3.txt to include:
+  • Detailed explanation of finding the best-fit hyper-plane in Multiple Linear Regression (MLR)
+  • Concept of optimized parameters: θ vector values that minimize prediction errors
+  • Step-by-step example demonstrating prediction error for a single row:
+      - Predicted vs actual CO₂ emission
+      - Calculation of error (residual)
+  • Introduction to Mean Squared Error (MSE) as a measure of overall model performance
+  • Emphasis that the objective of MLR is to minimize MSE for all predictions
+  • Leads into discussion: "How do we find the parameters or coefficients for MLR?"
 
-- Added supporting illustrative images:
-  • 7.1-types of regression.jpg – shows regression types (simple vs multiple)
-  • 7.2-application of multiple linear regression.jpg – demonstrates real-world applications
-  • 7.3-Predicting value with Multiple linear regression.jpg – visual guide for MLR predictions
-
-- Purpose: Provide structured, professional, and visually supported explanation for learners
-
+- Added illustrative images:
+  • 7.4-MSE To calculate model error.jpg – visual explanation of MSE
+  • 7.3-Predicting value with Multiple linear regression.jpg – updated to align with MSE example

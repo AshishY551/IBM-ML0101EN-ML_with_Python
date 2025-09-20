@@ -75,3 +75,27 @@ To this end, and as is the case in linear regression, we should estimate the val
 for θ vector that best predict the value of the target field in each row.
 To achieve this goal, we have to minimize the error of the prediction.
 Now, the question is, "How do we find the optimized parameters?"
+
+-Example case-
+To find the optimized parameters for our model, we should first understand what the optimized
+parameters are. Then we will find a way to optimize the parameters.
+In short, optimized parameters are the ones which lead to a model with the fewest errors.
+Let’s assume, for a moment, that we have already found the parameter vector of our
+model. It means we already know the values of θ
+vector. Now, we can use the model, and the feature
+set of the first row of our dataset to predict the Co2 emission for the first car, correct?
+If we plug the feature set values into the model equation, we find y ̂ .
+Let’s say, for example, it returns 140 as the predicted value for this specific row.
+What is the actual value? y=196. How different is the predicted value from
+the actual value of 196? Well, we can calculate it quite simply, as
+196-140, which of course = 56. This is the error of our model, only for one
+row, or one car, in our case. As is the case in linear regression, we can
+say the error here is the distance from the data point to the fitted regression model.
+The mean of all residual errors shows how bad the model is representing the dataset.
+It is called the mean squared error, or MSE.
+Mathematically, MSE can be shown by an equation. While this is not the only way to expose the
+error of a multiple linear regression model, it is one the most popular ways to do so.
+The best model for our dataset is the one with minimum error for all prediction values.
+So, the objective of multiple linear regression is to minimize the MSE equation.
+To minimize it, we should find the best parameters θ, but how?
+Okay, “How do we find the parameter or coefficients for multiple linear regression?”
