@@ -1,0 +1,77 @@
+1.Multiple Linear Regression:
+
+There are two types of linear regression models: simple regression and multiple
+regression. Simple linear regression is when one independent
+variable is used to estimate a dependent variable. For example, predicting Co2 emission using
+the variable of EngineSize. In reality, there are multiple variables that
+predict the Co2 emission. When multiple independent variables are present,
+the process is called "multiple linear regression."
+
+-
+For example, predicting Co2 emission using
+EngineSize and the number of Cylinders in the car’s engine.
+Our focus in this video is on multiple linear regression.
+The good thing is that multiple linear regression is the extension of the simple linear regression
+model. So, I suggest you go through the Simple Linear Regression video first, if you haven’t
+watched it already.
+Before we dive into a sample dataset and see how multiple linear regression works, I want
+to tell you what kind of problems it can solve; when we should use it; and, specifically,
+what kind of questions we can answer using it.
+
+-Applications:
+Basically, there are two applications for multiple linear regression.
+First, it can be used when we would like to identify the strength of the effect that the
+independent variables have on a dependent variable.
+For example, does revision time, test anxiety, lecture attendance, and gender, have any effect
+on exam performance of students? Second, it can be used to predict the impact
+of changes. That is, to understand how the dependent variable
+changes when we change the independent variables. For example, if we were reviewing a person’s
+health data, a multiple linear regression can tell you how much that person’s blood
+pressure goes up (or down) for every unit increase (or decrease) in a patient’s body
+mass index (BMI), holding other factors constant.
+
+-
+As is the case with simple linear regression, multiple linear regression is a method of
+predicting a continuous variable. It uses multiple variables, called independent
+variables, or predictors, that best predict the value of the target variable, which is
+also called the dependent variable. In multiple linear regression, the target
+value, y, is a linear combination of independent variables, x.
+For example, you can predict how much Co2 a car might emit due to independent variables,
+such as the car’s Engine Size, Number of Cylinders and Fuel Consumption.
+Multiple linear regression is very useful because you can examine which variables are
+significant predictors of the outcome variable. Also, you can find out how each feature impacts
+the outcome variable. And again, as is the case in simple linear
+regression, if you manage to build such a regression model, you can use it to predict
+the emission amount of an unknown case, such as record number 9.
+
+=
+-Formula-
+Generally, the model is of the form: y ̂=θ_0+ θ_1 x_1+ θ_2 x_2 and so on, up to ... +θ_n x_n.
+Mathematically, we can show it as a vector form as well.
+This means, it can be shown as a dot product of 2 vectors: the parameters vector and the
+feature set vector.
+
+-
+Generally, we can show the equation for a multi-dimensional space as θ^T x, where θ
+is an n-by-one vector of unknown parameters in a multi-dimensional space, and x is the
+vector of the feature sets, as θ is a vector of coefficients, and is
+supposed to be multiplied by x. Conventionally, it is shown as transpose θ.
+θ is also called the parameters, or, weight vector of the regression equation … both
+these terms can be used interchangeably. And x is the feature set, which represents
+a car.
+
+-
+For example x1 for engine size, or x2 for cylinders, and so on.
+The first element of the feature set would be set to 1, because it turns the θ_0 into
+the intercept or bias parameter when the vector is multiplied by the parameter vector.
+Please notice that θ^T x in a one dimensional space, is the equation of a line.
+It is what we use in simple linear regression. In higher dimensions, when we have more than
+one input (or x), the line is called a plane or a hyper-plane.
+And this is what we use for multiple linear regression.
+
+-
+So, the whole idea is to find the best fit hyper-plane for our data.
+To this end, and as is the case in linear regression, we should estimate the values
+for θ vector that best predict the value of the target field in each row.
+To achieve this goal, we have to minimize the error of the prediction.
+Now, the question is, "How do we find the optimized parameters?"

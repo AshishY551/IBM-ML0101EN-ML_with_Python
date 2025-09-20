@@ -1,20 +1,22 @@
-📊 Add Module 2.2: Simple Linear Regression practice & resources  
+📊 Add Module2.3: Multiple Linear Regression Content & Illustrative Images
 
-- Added screenshots:  
-  • 6.3-Mask & Train Data Distribution  
-  • 6.4-Model Data  
-  • 6.5-Plot Output  
+- Added Module2.3.txt covering detailed explanation of Multiple Linear Regression (MLR):
+  • Distinction between simple and multiple linear regression
+  • Applications: 
+      - Assessing strength of independent variable effects on dependent variable
+      - Predicting changes in dependent variable due to independent variables
+  • Concept of predicting continuous variables using multiple predictors
+  • Mathematical formulation: ŷ = θ₀ + θ₁x₁ + θ₂x₂ + … + θₙxₙ
+  • Vector/matrix representation (θᵀx) for multi-dimensional feature space
+  • Explanation of hyper-plane fitting for multiple features
+  • Role of intercept (bias) and parameter vector in MLR
+  • Practical example: predicting CO₂ emissions using Engine Size, Cylinders, Fuel Consumption
+  • Emphasis on significance of variables and predictive power
 
-- Included notebook: ML0101EN-Reg-Simple-Linear-Regression-Co2.ipynb  
-- Updated notes in module2.2.txt with:  
-  • Scatter plot (CYLINDERS vs Emissions)  
-  • Train/Test dataset split using np.random.rand()  
-  • Simple Regression Model creation & training (sklearn LinearRegression)  
-  • Coefficients & Intercept output  
-  • Visualization of fitted regression line  
-  • Model evaluation metrics (MAE, MSE, RMSE, R²)  
-  • Practice exercise with FUELCONSUMPTION_COMB feature  
+- Added supporting illustrative images:
+  • 7.1-types of regression.jpg – shows regression types (simple vs multiple)
+  • 7.2-application of multiple linear regression.jpg – demonstrates real-world applications
+  • 7.3-Predicting value with Multiple linear regression.jpg – visual guide for MLR predictions
 
-- Practiced exercises completed with outputs and evaluation (Mean Absolute Error: 20.98).  
+- Purpose: Provide structured, professional, and visually supported explanation for learners
 
-✨ This commit strengthens the module with complete theory, practical code, visual outputs, and exercises for deeper learning.
