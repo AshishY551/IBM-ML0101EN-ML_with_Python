@@ -1,24 +1,37 @@
-📐 Add Linear Regression parameter estimation notes + example (2.6.4Estimating Parameters)
+📘 Add Module 2 Lab: Simple Linear Regression instructions  
 
-- Added detailed explanation of parameter estimation in Simple Linear Regression
-  • Option 1: Mathematical approach  
-  • Option 2: Optimization approach  
+- Integrated detailed course lab description for Module 2 (Regression).  
+- Added guidance on using CC Labs with Jupyter Notebook for hands-on practice.  
+- Included troubleshooting steps with Support contact reference.  
+- Provided external resources: IBM SPSS Modeler (Mac & Windows) with IBM Cloud setup link.  
+- Added note on using IBM Data Science Experience (DSX) for scalable cloud-based notebooks.  
+- Enhanced clarity and student experience with structured learning flow (Start Lab button, instructions, and external links).  
 
-- Documented step-by-step calculation of coefficients (θ₀ and θ₁):
-  • θ₁ (slope) computed using mean-based formula across dataset values → θ₁ = 39  
-  • θ₀ (intercept/bias) derived from dataset averages → θ₀ = 125.74  
+✨ This commit improves learner accessibility by consolidating lab resources, ensuring smooth onboarding, and offering advanced exploration options.
 
-- Integrated clear polynomial representation of regression line:
-  • Co2Emission = θ₀ + θ₁ × EngineSize  
-  • Final equation: Co2Emission = 125 + 39 × EngineSize  
 
-- Worked example:
-  • EngineSize = 2.4 → Co2Emission ≈ 218.6 (prediction for record #9)  
+📊 Add Module 2.2 - Linear Regression Data Exploration & Visualization  
 
-- Added contextual insights:
-  • Why Linear Regression is widely used (fast, interpretable, no hyperparameter tuning)  
-  • Distinction between bias coefficient (θ₀) and feature coefficient (θ₁)  
+- Added Jupyter workflow screenshots:  
+  • 1-Import package & dataset  
+  • 2-Reading Data  
+  • 3-Data exploration (summary statistics)  
+  • 4-Feature selection  
+  • 5.1-Plot & graphs (histograms)  
+  • 5.2-Plot2 (scatter plot: FuelConsumption vs Emissions)  
+  • 5.3-Plot3 (scatter plot: EngineSize vs Emissions)  
+  • 6-Practice example  
+  • JupyterNotebook_lab-linear regression  
 
-✅ Strengthens module on Regression with theoretical + applied learning  
-✅ Ensures reproducibility of parameter derivation process  
-✅ Enhances text file with polished, structured, and interpretable learning notes.
+- Added **Module2.2.txt** with structured steps:  
+  • Package imports (matplotlib, pandas, numpy, pylab)  
+  • Dataset download via wget → FuelConsumption.csv  
+  • Dataset schema & description (ModelYear, EngineSize, Cylinders, Fuel Consumption, CO₂ emissions, etc.)  
+  • Data loading & inspection (`df.head()`)  
+  • Descriptive statistics summary (`df.describe()`)  
+  • Feature selection → cdf with [ENGINESIZE, CYLINDERS, FUELCONSUMPTION_COMB, CO2EMISSIONS]  
+  • Visualization: Histograms + Scatter plots (FuelConsumption vs Emissions, EngineSize vs Emissions)  
+
+✅ Demonstrates data preprocessing, exploration & feature selection for regression  
+✅ Strengthens practical learning with visual correlations of variables  
+✅ Provides clean, reproducible pipeline for CO₂ emissions dataset analysis.
