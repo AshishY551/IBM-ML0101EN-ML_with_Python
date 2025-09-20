@@ -1,37 +1,20 @@
-📘 Add Module 2 Lab: Simple Linear Regression instructions  
+📊 Add Module 2.2: Simple Linear Regression practice & resources  
 
-- Integrated detailed course lab description for Module 2 (Regression).  
-- Added guidance on using CC Labs with Jupyter Notebook for hands-on practice.  
-- Included troubleshooting steps with Support contact reference.  
-- Provided external resources: IBM SPSS Modeler (Mac & Windows) with IBM Cloud setup link.  
-- Added note on using IBM Data Science Experience (DSX) for scalable cloud-based notebooks.  
-- Enhanced clarity and student experience with structured learning flow (Start Lab button, instructions, and external links).  
+- Added screenshots:  
+  • 6.3-Mask & Train Data Distribution  
+  • 6.4-Model Data  
+  • 6.5-Plot Output  
 
-✨ This commit improves learner accessibility by consolidating lab resources, ensuring smooth onboarding, and offering advanced exploration options.
+- Included notebook: ML0101EN-Reg-Simple-Linear-Regression-Co2.ipynb  
+- Updated notes in module2.2.txt with:  
+  • Scatter plot (CYLINDERS vs Emissions)  
+  • Train/Test dataset split using np.random.rand()  
+  • Simple Regression Model creation & training (sklearn LinearRegression)  
+  • Coefficients & Intercept output  
+  • Visualization of fitted regression line  
+  • Model evaluation metrics (MAE, MSE, RMSE, R²)  
+  • Practice exercise with FUELCONSUMPTION_COMB feature  
 
+- Practiced exercises completed with outputs and evaluation (Mean Absolute Error: 20.98).  
 
-📊 Add Module 2.2 - Linear Regression Data Exploration & Visualization  
-
-- Added Jupyter workflow screenshots:  
-  • 1-Import package & dataset  
-  • 2-Reading Data  
-  • 3-Data exploration (summary statistics)  
-  • 4-Feature selection  
-  • 5.1-Plot & graphs (histograms)  
-  • 5.2-Plot2 (scatter plot: FuelConsumption vs Emissions)  
-  • 5.3-Plot3 (scatter plot: EngineSize vs Emissions)  
-  • 6-Practice example  
-  • JupyterNotebook_lab-linear regression  
-
-- Added **Module2.2.txt** with structured steps:  
-  • Package imports (matplotlib, pandas, numpy, pylab)  
-  • Dataset download via wget → FuelConsumption.csv  
-  • Dataset schema & description (ModelYear, EngineSize, Cylinders, Fuel Consumption, CO₂ emissions, etc.)  
-  • Data loading & inspection (`df.head()`)  
-  • Descriptive statistics summary (`df.describe()`)  
-  • Feature selection → cdf with [ENGINESIZE, CYLINDERS, FUELCONSUMPTION_COMB, CO2EMISSIONS]  
-  • Visualization: Histograms + Scatter plots (FuelConsumption vs Emissions, EngineSize vs Emissions)  
-
-✅ Demonstrates data preprocessing, exploration & feature selection for regression  
-✅ Strengthens practical learning with visual correlations of variables  
-✅ Provides clean, reproducible pipeline for CO₂ emissions dataset analysis.
+✨ This commit strengthens the module with complete theory, practical code, visual outputs, and exercises for deeper learning.
