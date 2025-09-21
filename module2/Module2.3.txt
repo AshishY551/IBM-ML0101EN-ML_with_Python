@@ -124,3 +124,50 @@ Please understand, however, that there are other approaches to estimate the para
 of the multiple linear regression that you can explore on your own.
 
 -----------------------------------------------------------------------------
+7.6-example prediction with multiple linear regression
+
+After you find the best parameters for your model, you can go to the prediction phase.
+After we found the parameters of the linear equation, making predictions is as simple
+as solving the equation for a specific set of inputs.
+Imagine we are predicting Co2 emission (or y) from other variables for the automobile
+in record number 9. Our linear regression model representation
+for this problem would be: y ̂=θ^T x. Once we find the parameters, we can plug them
+into the equation of the linear model. For example, let’s use θ0 = 125, θ1 = 6.2,
+θ2 = 14, and so on. If we map it to our dataset, we can rewrite
+the linear model as "Co2Emission=125 plus 6.2 multiplied by EngineSize plus 14 multiplied
+by Cylinder," and so on. As you can see, multiple linear regression
+estimates the relative importance of predictors. For example, it shows Cylinder has higher
+impact on Co2 emission amounts in comparison with EngineSize.
+Now, let’s plug in the 9th row of our dataset and calculate the Co2 emission for a car with
+the EngineSize of 2.4. So Co2Emission=125 + 6.2 × 2.4 + 14 × 4
+… and so on. We can predict the Co2 emission for this specific
+car would be 214.1.
+--------------------------------------------------------------------------------------------
+7.7-Concerns & disadvantages of multiple linear regression-
+
+Now let me address some concerns that you might already be having regarding multiple
+linear regression. As you saw, you can use multiple independent
+variables to predict a target value in multiple linear regression.
+It sometimes results in a better model compared to using a simple linear regression, which
+uses only one independent variable to predict the dependent variable.
+Now, the question is, "How many independent variables should we use for the prediction?"
+Should we use all the fields in our dataset? Does adding independent variables to a multiple
+linear regression model always increase the accuracy of the model?
+Basically, adding too many independent variables without any theoretical justification may
+result in an over-fit model. An over-fit model is a real problem because
+it is too complicated for your data set and not general enough to be used for prediction.
+So, it is recommended to avoid using many variables for prediction.
+There are different ways to avoid overfitting a model in regression, however, that is outside
+the scope of this video.
+The next question is, “Should independent variables be continuous?”
+Basically, categorical independent variables can be incorporated into a regression model
+by converting them into numerical variables. For example, given a binary variable such
+as car type, the code dummies “0” for “Manual” and 1 for “automatic” cars.
+As a last point, remember that “multiple linear regression” is a specific type of
+linear regression. So, there needs to be a linear relationship
+between the dependent variable and each of your independent variables.
+There are a number of ways to check for linear relationship.
+For example, you can use scatterplots, and then visually check for linearity.
+If the relationship displayed in your scatterplot is not linear, then, you need to use non-linear
+regression.
+==============================================================

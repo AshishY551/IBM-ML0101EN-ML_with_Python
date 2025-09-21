@@ -1,11 +1,18 @@
-📝 Add Module 2.3: Estimation Methods for Regression Parameters  
+📘 Extend Module 2.3: Multiple Linear Regression Examples & Concerns  
 
-- Added resource: 7.5-estimation-methods-for-parameters.jpg  
-- Updated module2.3.txt with detailed explanation of parameter estimation:  
-  • Ordinary Least Squares (OLS) method – minimizing Mean Squared Error using matrix operations  
-  • Computational complexity considerations (small vs large datasets)  
-  • Optimization-based methods (e.g., Gradient Descent) for scalable training  
-  • Iterative parameter tuning through error minimization  
-  • Note on exploring additional estimation approaches beyond OLS & GD  
+- Added new resources:  
+  • 7.6-example-prediction-with-multiple-linear-regression.jpg  
+  • 7.7-concerns-&-disadvantages-of-multiple-linear-regression.jpg  
 
-✨ This update expands the theoretical foundation of regression modeling by introducing parameter estimation methods and trade-offs, supporting deeper understanding of linear regression.
+- Updated module2.3.txt with:  
+  • Example of prediction using multiple linear regression parameters (θ0, θ1, θ2, …)  
+    ▸ Demonstrated calculation for CO₂ emissions on a specific dataset row  
+    ▸ Highlighted feature importance (Cylinder vs EngineSize)  
+  • Concerns & disadvantages of multiple linear regression  
+    ▸ Risk of overfitting with too many independent variables  
+    ▸ Guidelines for variable selection and theoretical justification  
+    ▸ Handling categorical variables with dummy encoding  
+    ▸ Importance of ensuring linear relationship between predictors and target  
+    ▸ Recommendation to switch to non-linear regression if linearity is absent  
+
+✨ This update adds applied prediction workflow and critical caveats, balancing practice with theoretical awareness.
