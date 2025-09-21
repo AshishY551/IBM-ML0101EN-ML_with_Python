@@ -99,3 +99,28 @@ The best model for our dataset is the one with minimum error for all prediction 
 So, the objective of multiple linear regression is to minimize the MSE equation.
 To minimize it, we should find the best parameters θ, but how?
 Okay, “How do we find the parameter or coefficients for multiple linear regression?”
+
+--------
+-Estimation methods-
+
+There are many ways to estimate the value of these coefficients.
+However, the most common methods are the ordinary least squares and optimization approach.
+Ordinary least squares tries to estimate the values of the coefficients by minimizing
+the “Mean Square Error.” This approach uses the data as a matrix and
+uses linear algebra operations to estimate the optimal values for the theta.
+The problem with this technique is the time complexity of calculating matrix operations,
+as it can take a very long time to finish. When the number of rows in your dataset is
+less 10,000 you can think of this technique as an option, however, for greater values,
+you should try other faster approaches.
+The second option is to use an optimization algorithm to find the best parameters.
+That is, you can use a process of optimizing the values of the coefficients by iteratively
+minimizing the error of the model on your training data.
+For example, you can use Gradient Descent, which starts optimization with random values
+for each coefficient. Then, calculates the errors, and tries to
+minimize it through wise changing of the coefficients in multiple iterations.
+Gradient descent is a proper approach if you have a large dataset.
+
+Please understand, however, that there are other approaches to estimate the parameters
+of the multiple linear regression that you can explore on your own.
+
+-----------------------------------------------------------------------------

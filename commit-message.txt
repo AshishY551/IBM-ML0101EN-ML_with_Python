@@ -1,15 +1,11 @@
-📈 Update Module2.3: Optimized Parameters & MSE Explanation + New Illustrative Images
+📝 Add Module 2.3: Estimation Methods for Regression Parameters  
 
-- Updated Module2.3.txt to include:
-  • Detailed explanation of finding the best-fit hyper-plane in Multiple Linear Regression (MLR)
-  • Concept of optimized parameters: θ vector values that minimize prediction errors
-  • Step-by-step example demonstrating prediction error for a single row:
-      - Predicted vs actual CO₂ emission
-      - Calculation of error (residual)
-  • Introduction to Mean Squared Error (MSE) as a measure of overall model performance
-  • Emphasis that the objective of MLR is to minimize MSE for all predictions
-  • Leads into discussion: "How do we find the parameters or coefficients for MLR?"
+- Added resource: 7.5-estimation-methods-for-parameters.jpg  
+- Updated module2.3.txt with detailed explanation of parameter estimation:  
+  • Ordinary Least Squares (OLS) method – minimizing Mean Squared Error using matrix operations  
+  • Computational complexity considerations (small vs large datasets)  
+  • Optimization-based methods (e.g., Gradient Descent) for scalable training  
+  • Iterative parameter tuning through error minimization  
+  • Note on exploring additional estimation approaches beyond OLS & GD  
 
-- Added illustrative images:
-  • 7.4-MSE To calculate model error.jpg – visual explanation of MSE
-  • 7.3-Predicting value with Multiple linear regression.jpg – updated to align with MSE example
+✨ This update expands the theoretical foundation of regression modeling by introducing parameter estimation methods and trade-offs, supporting deeper understanding of linear regression.
