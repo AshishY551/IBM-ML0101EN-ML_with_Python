@@ -1,18 +1,14 @@
-📘 Extend Module 2.3: Multiple Linear Regression Examples & Concerns  
+🧪 Add Lab: Multiple Linear Regression (Module 2.8)
 
-- Added new resources:  
-  • 7.6-example-prediction-with-multiple-linear-regression.jpg  
-  • 7.7-concerns-&-disadvantages-of-multiple-linear-regression.jpg  
+- Created folder 'Lab Multiple Linear Regression' with initial file `Module2.8.txt`  
+- Added sections with detailed walkthrough and outputs:
+  • 0.1 - Objectives of Multiple Linear Regression lab  
+  • 0.2 - Table of Contents (#understanding-data, #reading_data, #multiple_regression_model, #prediction, #practice)  
+  • 1.1 - Importing required packages (matplotlib, pandas, numpy, pylab)  
+  • 1.2 - Downloading dataset using wget from IBM Object Storage (FuelConsumption.csv) with logs  
+  • 1.3 - Understanding dataset fields (MODELYEAR, MAKE, MODEL, VEHICLE CLASS, ENGINE SIZE, CYLINDERS, TRANSMISSION, FUELTYPE, FUEL CONSUMPTION variants, CO2 EMISSIONS)  
+  • 1.4 - Reading dataset into pandas DataFrame and displaying sample rows with df.head()  
+  • 1.5 - Feature selection into cdf (Engine Size, Cylinders, Fuel Consumption metrics, CO2 Emissions)  
 
-- Updated module2.3.txt with:  
-  • Example of prediction using multiple linear regression parameters (θ0, θ1, θ2, …)  
-    ▸ Demonstrated calculation for CO₂ emissions on a specific dataset row  
-    ▸ Highlighted feature importance (Cylinder vs EngineSize)  
-  • Concerns & disadvantages of multiple linear regression  
-    ▸ Risk of overfitting with too many independent variables  
-    ▸ Guidelines for variable selection and theoretical justification  
-    ▸ Handling categorical variables with dummy encoding  
-    ▸ Importance of ensuring linear relationship between predictors and target  
-    ▸ Recommendation to switch to non-linear regression if linearity is absent  
-
-✨ This update adds applied prediction workflow and critical caveats, balancing practice with theoretical awareness.
+✨ This commit establishes the foundational steps of the Multiple Linear Regression Lab:
+   from setup, data download, feature exploration, to structured workflow.

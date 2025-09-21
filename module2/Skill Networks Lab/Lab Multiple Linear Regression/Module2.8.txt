@@ -1,0 +1,96 @@
+0.1-# Multiple Linear Regression
+
+## Objectives
+
+After completing this lab you will be able to:
+
+* Use scikit-learn to implement Multiple Linear Regression
+* Create a model, train it, test it and use the model
+
+-----
+0.2-Table of contents
+#understanding-data
+#reading_data
+#multiple_regression_model
+#prediction
+#practice
+---
+
+--------------------
+1.1-### Importing Needed packages
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import pylab as pl
+import numpy as np
+%matplotlib inline
+
+-----------------------------------
+1.2-### Downloading Data
+To download the data, we will use !wget to download it from IBM Object Storage.
+code-
+!wget -O FuelConsumption.csv https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv
+-----
+output-
+--2025-09-21 18:22:55--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv
+Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.63.118.104, 169.63.118.104
+Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.63.118.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 72629 (71K) [text/csv]
+Saving to: ‘FuelConsumption.csv’
+
+FuelConsumption.csv 100%[===================>]  70.93K  --.-KB/s    in 0.002s  
+
+2025-09-21 18:22:55 (36.4 MB/s) - ‘FuelConsumption.csv’ saved [72629/72629]
+-----------------------------------------------------------
+1.3-Understanding the Data
+FuelConsumption.csv:
+We have downloaded a fuel consumption dataset, FuelConsumption.csv, which contains model-specific fuel consumption ratings and estimated carbon dioxide emissions for new light-duty vehicles for retail sale in Canada. Dataset source
+
+MODELYEAR e.g. 2014
+MAKE e.g. Acura
+MODEL e.g. ILX
+VEHICLE CLASS e.g. SUV
+ENGINE SIZE e.g. 4.7
+CYLINDERS e.g 6
+TRANSMISSION e.g. A6
+FUELTYPE e.g. z
+FUEL CONSUMPTION in CITY(L/100 km) e.g. 9.9
+FUEL CONSUMPTION in HWY (L/100 km) e.g. 8.9
+FUEL CONSUMPTION COMB (L/100 km) e.g. 9.2
+CO2 EMISSIONS (g/km) e.g. 182 --> low --> 0
+
+---------------------------------------------------------------------
+1.4-###Reading the data in
+
+df = pd.read_csv("FuelConsumption.csv")
+
+# take a look at the dataset
+df.head()
+
+
+---
+	MODELYEAR	MAKE	MODEL	VEHICLECLASS	ENGINESIZE	CYLINDERS	TRANSMISSION	FUELTYPE	FUELCONSUMPTION_CITY	FUELCONSUMPTION_HWY	FUELCONSUMPTION_COMB	FUELCONSUMPTION_COMB_MPG	CO2EMISSIONS
+0	2014	ACURA	ILX	COMPACT	2.0	4	AS5	Z	9.9	6.7	8.5	33	196
+1	2014	ACURA	ILX	COMPACT	2.4	4	M6	Z	11.2	7.7	9.6	29	221
+2	2014	ACURA	ILX HYBRID	COMPACT	1.5	4	AV7	Z	6.0	5.8	5.9	48	136
+3	2014	ACURA	MDX 4WD	SUV - SMALL	3.5	6	AS6	Z	12.7	9.1	11.1	25	255
+4	2014	ACURA	RDX AWD	SUV - SMALL	3.5	6	AS6	Z	12.1	8.7	10.6	27	244
+--------------------------------------------------------------------
+1.5-Let's select some features that we want to use for regression.
+
+cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_CITY','FUELCONSUMPTION_HWY','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
+cdf.head(9)
+
+-----
+	ENGINESIZE	CYLINDERS	FUELCONSUMPTION_CITY	FUELCONSUMPTION_HWY	FUELCONSUMPTION_COMB	CO2EMISSIONS
+0	2.0	4	9.9	6.7	8.5	196
+1	2.4	4	11.2	7.7	9.6	221
+2	1.5	4	6.0	5.8	5.9	136
+3	3.5	6	12.7	9.1	11.1	255
+4	3.5	6	12.1	8.7	10.6	244
+5	3.5	6	11.9	7.7	10.0	230
+6	3.5	6	11.8	8.1	10.1	232
+7	3.7	6	12.8	9.0	11.1	255
+8	3.7	6	13.4	9.5	11.6	267
+----------------------------------------------------------
