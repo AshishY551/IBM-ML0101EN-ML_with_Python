@@ -1,14 +1,27 @@
-🧪 Add Lab: Multiple Linear Regression (Module 2.8)
+📊 Add Multiple Regression Model & Prediction (Module 2.8)
 
-- Created folder 'Lab Multiple Linear Regression' with initial file `Module2.8.txt`  
-- Added sections with detailed walkthrough and outputs:
-  • 0.1 - Objectives of Multiple Linear Regression lab  
-  • 0.2 - Table of Contents (#understanding-data, #reading_data, #multiple_regression_model, #prediction, #practice)  
-  • 1.1 - Importing required packages (matplotlib, pandas, numpy, pylab)  
-  • 1.2 - Downloading dataset using wget from IBM Object Storage (FuelConsumption.csv) with logs  
-  • 1.3 - Understanding dataset fields (MODELYEAR, MAKE, MODEL, VEHICLE CLASS, ENGINE SIZE, CYLINDERS, TRANSMISSION, FUELTYPE, FUEL CONSUMPTION variants, CO2 EMISSIONS)  
-  • 1.4 - Reading dataset into pandas DataFrame and displaying sample rows with df.head()  
-  • 1.5 - Feature selection into cdf (Engine Size, Cylinders, Fuel Consumption metrics, CO2 Emissions)  
+- Updated `Module2.8.txt` with new sections and outputs:
+  • 2.1 - Multiple Regression Model
+    - Introduced the concept of multiple independent variables influencing CO2 emissions.
+    - Implemented `LinearRegression()` using sklearn with features [ENGINESIZE, CYLINDERS, FUELCONSUMPTION_COMB].
+    - Printed model coefficients → [[11.47039379  7.17702012  9.43978525]].
+    - Explained Ordinary Least Squares (OLS) as the underlying method, including:
+      ▸ Minimizing squared errors (SSE/MSE).
+      ▸ Closed-form analytical solution.
+      ▸ Optimization algorithms (Gradient Descent, SGD, Newton’s Method).
 
-✨ This commit establishes the foundational steps of the Multiple Linear Regression Lab:
-   from setup, data download, feature exploration, to structured workflow.
+  • 2.2 - Prediction
+    - Performed predictions using the test dataset with the trained multiple regression model.
+    - Calculated evaluation metrics:
+      ▸ Mean Squared Error (MSE): 590.67
+      ▸ Variance score (R²): 0.86
+    - Added detailed explanation of Explained Variance regression score, formula, and interpretation.
+
+- Added supporting lab resources:
+  • 8.2-multiple_regression_model.jpg
+  • 8.3-practice.jpg
+  • 8.4-Prediction.jpg
+  • ML0101EN-Reg-Multiple-Linear-Regression-Co2.ipynb
+
+✨ This commit completes the Multiple Regression section with both theoretical foundations (OLS) and hands-on implementation, enabling training, testing, and evaluation of multi-variable linear models.
+
