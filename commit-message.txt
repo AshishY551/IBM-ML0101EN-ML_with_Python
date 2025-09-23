@@ -1,27 +1,16 @@
-📊 Add Multiple Regression Model & Prediction (Module 2.8)
+🧪 Add Evaluation Approach 1: Train-Test on Same Dataset (Module 2.9)
 
-- Updated `Module2.8.txt` with new sections and outputs:
-  • 2.1 - Multiple Regression Model
-    - Introduced the concept of multiple independent variables influencing CO2 emissions.
-    - Implemented `LinearRegression()` using sklearn with features [ENGINESIZE, CYLINDERS, FUELCONSUMPTION_COMB].
-    - Printed model coefficients → [[11.47039379  7.17702012  9.43978525]].
-    - Explained Ordinary Least Squares (OLS) as the underlying method, including:
-      ▸ Minimizing squared errors (SSE/MSE).
-      ▸ Closed-form analytical solution.
-      ▸ Optimization algorithms (Gradient Descent, SGD, Newton’s Method).
+- Updated `Module2.9.txt` with detailed explanation of the first model evaluation strategy:
+  • Approach 1 — Train and Test on the SAME dataset
+    - Train the model using the full dataset.
+    - Select a portion of the dataset (e.g., rows 6–9) as the test set (with labels hidden during prediction).
+    - Use the trained model to predict the target values for this test set.
+    - Compare predicted values (ŷ) with actual values (y) to assess accuracy.
 
-  • 2.2 - Prediction
-    - Performed predictions using the test dataset with the trained multiple regression model.
-    - Calculated evaluation metrics:
-      ▸ Mean Squared Error (MSE): 590.67
-      ▸ Variance score (R²): 0.86
-    - Added detailed explanation of Explained Variance regression score, formula, and interpretation.
+- Key Concepts Added:
+  • Test set vs Actual values (ground truth).
+  • Basic error calculation: average difference between predicted and actual values.
+  • Importance of evaluation metrics — based on similarity between ŷ and y.
+  • Simplest evaluation scenario explained step by step.
 
-- Added supporting lab resources:
-  • 8.2-multiple_regression_model.jpg
-  • 8.3-practice.jpg
-  • 8.4-Prediction.jpg
-  • ML0101EN-Reg-Multiple-Linear-Regression-Co2.ipynb
-
-✨ This commit completes the Multiple Regression section with both theoretical foundations (OLS) and hands-on implementation, enabling training, testing, and evaluation of multi-variable linear models.
-
+✨ This commit introduces the foundation of model evaluation by demonstrating how to validate regression accuracy using a portion of the dataset itself.
