@@ -1,16 +1,32 @@
-🧪 Add Evaluation Approach 1: Train-Test on Same Dataset (Module 2.9)
+📊 Add Advanced Evaluation Methods: Train/Test Split & K-Fold CV (Module 2.7)
 
-- Updated `Module2.9.txt` with detailed explanation of the first model evaluation strategy:
-  • Approach 1 — Train and Test on the SAME dataset
-    - Train the model using the full dataset.
-    - Select a portion of the dataset (e.g., rows 6–9) as the test set (with labels hidden during prediction).
-    - Use the trained model to predict the target values for this test set.
-    - Compare predicted values (ŷ) with actual values (y) to assess accuracy.
+- Added new diagrams for clarity:
+  • 7.5 - Estimation methods for parameters  
+  • 7.6 - Example prediction with multiple linear regression  
+  • 7.7 - Concerns & disadvantages of multiple linear regression  
+  • 7.8   - Calculating model accuracy  
+  • 7.8.3 - Accuracy types  
+  • 7.8.4 - Train/Test Split approach  
+  • 7.8.5 - Train/Test vs Train/Test Split comparison  
+  • 7.8.6 - K-Fold Cross-Validation  
 
-- Key Concepts Added:
-  • Test set vs Actual values (ground truth).
-  • Basic error calculation: average difference between predicted and actual values.
-  • Importance of evaluation metrics — based on similarity between ŷ and y.
-  • Simplest evaluation scenario explained step by step.
+- Updated `Module2.7.txt` with new evaluation approaches:
+  1️⃣ **Train/Test Split Approach**
+      • Dataset divided into training set (e.g., rows 0–5) and testing set (e.g., rows 6–9).  
+      • Model is trained on training data and evaluated on unseen test data.  
+      • Provides more realistic *out-of-sample accuracy* compared to training/testing on same dataset.  
+      • Limitation: results highly dependent on the specific split.  
 
-✨ This commit introduces the foundation of model evaluation by demonstrating how to validate regression accuracy using a portion of the dataset itself.
+  2️⃣ **K-Fold Cross-Validation**
+      • Dataset is split into *k* folds (e.g., k=4).  
+      • Each fold is used once for testing while remaining folds are used for training.  
+      • Accuracies across folds are averaged → reduces variance and dependency issues.  
+      • Provides more consistent and reliable evaluation metric.  
+
+- ✨ Key Notes:
+  • Out-of-sample testing prevents data leakage into model training.  
+  • Train/Test Split is simple but may cause variance in accuracy.  
+  • K-Fold CV balances accuracy by averaging multiple splits.  
+  • Practical foundation for building more robust evaluation pipelines.
+
+🚀 This commit enriches Module 2.7 with essential evaluation strategies and supporting visuals, ensuring learners understand both the *limitations* and *advantages* of each method.
