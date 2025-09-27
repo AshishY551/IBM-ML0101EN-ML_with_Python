@@ -1,32 +1,25 @@
-📊 Add Advanced Evaluation Methods: Train/Test Split & K-Fold CV (Module 2.7)
+📊 Add Regression Evaluation Metrics (Module2.9 + Diagram)
 
-- Added new diagrams for clarity:
-  • 7.5 - Estimation methods for parameters  
-  • 7.6 - Example prediction with multiple linear regression  
-  • 7.7 - Concerns & disadvantages of multiple linear regression  
-  • 7.8   - Calculating model accuracy  
-  • 7.8.3 - Accuracy types  
-  • 7.8.4 - Train/Test Split approach  
-  • 7.8.5 - Train/Test vs Train/Test Split comparison  
-  • 7.8.6 - K-Fold Cross-Validation  
+- Added **7.9-Error evaluation matrix in regression.jpg** (visual summary of metrics).  
+- Created **Module2.9.txt** with detailed explanation of regression error metrics:
 
-- Updated `Module2.7.txt` with new evaluation approaches:
-  1️⃣ **Train/Test Split Approach**
-      • Dataset divided into training set (e.g., rows 0–5) and testing set (e.g., rows 6–9).  
-      • Model is trained on training data and evaluated on unseen test data.  
-      • Provides more realistic *out-of-sample accuracy* compared to training/testing on same dataset.  
-      • Limitation: results highly dependent on the specific split.  
+  🔹 **Error Definition**
+      • Difference between actual data points and model's predicted trend line.  
+      • Error can be quantified in multiple ways depending on focus.  
 
-  2️⃣ **K-Fold Cross-Validation**
-      • Dataset is split into *k* folds (e.g., k=4).  
-      • Each fold is used once for testing while remaining folds are used for training.  
-      • Accuracies across folds are averaged → reduces variance and dependency issues.  
-      • Provides more consistent and reliable evaluation metric.  
+  🔹 **Key Metrics**
+      • **MAE (Mean Absolute Error):** Simple average of absolute errors.  
+      • **MSE (Mean Squared Error):** Squares errors to penalize large deviations more.  
+      • **RMSE (Root Mean Squared Error):** Square root of MSE; interpretable in same units as target.  
+      • **RAE (Relative Absolute Error):** Normalizes total absolute error using mean predictor.  
+      • **RSE (Relative Squared Error):** Variant of RAE, widely used for calculating R².  
+      • **R² (Coefficient of Determination):** Not error but measures how well regression line fits data.  
 
-- ✨ Key Notes:
-  • Out-of-sample testing prevents data leakage into model training.  
-  • Train/Test Split is simple but may cause variance in accuracy.  
-  • K-Fold CV balances accuracy by averaging multiple splits.  
-  • Practical foundation for building more robust evaluation pipelines.
+  🔹 **Insights**
+      • MAE is intuitive, but MSE/ RMSE highlight large errors.  
+      • RMSE is preferred in practice due to interpretability in target units.  
+      • R² provides an overall model fit indicator.  
+      • Choice of metric depends on model type, dataset characteristics, and domain.  
 
-🚀 This commit enriches Module 2.7 with essential evaluation strategies and supporting visuals, ensuring learners understand both the *limitations* and *advantages* of each method.
+- ✅ Consolidates theoretical understanding + diagram for quick visual learning.  
+- 📘 Forms foundation for comparing model accuracy and guiding optimization in regression analysis.
