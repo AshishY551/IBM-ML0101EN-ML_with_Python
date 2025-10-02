@@ -1,25 +1,17 @@
-📊 Add Regression Evaluation Metrics (Module2.9 + Diagram)
+📈 Add introduction to Non-Linear Regression (Module2.10)
 
-- Added **7.9-Error evaluation matrix in regression.jpg** (visual summary of metrics).  
-- Created **Module2.9.txt** with detailed explanation of regression error metrics:
+- Added **2.10.1-Non_linear_regression.jpg** for visual reference of GDP vs Time dataset.  
+- Created **Module2.10.txt** covering:  
+  🔹 Context: China’s GDP growth over time with curvilinear trend.  
+  🔹 Key Questions:  
+      • Can GDP be predicted based on time?  
+      • Is linear regression sufficient for this dataset?  
+  🔹 Insight: Linear regression fails for non-linear patterns (GDP shows exponential/logistic growth).  
+  🔹 Explanation: Non-linear regression is required as growth accelerates after 2005 and decelerates in 2010s.  
+  🔹 Example model: Exponential form  
+      ŷ = θ₀ + θ₁ (θ₂ˣ),  
+      where θ parameters are estimated for prediction.  
 
-  🔹 **Error Definition**
-      • Difference between actual data points and model's predicted trend line.  
-      • Error can be quantified in multiple ways depending on focus.  
+- ✅ Sets the foundation for applying non-linear regression methods.  
+- 📘 Marks the transition from linear regression limitations to more complex model fitting.
 
-  🔹 **Key Metrics**
-      • **MAE (Mean Absolute Error):** Simple average of absolute errors.  
-      • **MSE (Mean Squared Error):** Squares errors to penalize large deviations more.  
-      • **RMSE (Root Mean Squared Error):** Square root of MSE; interpretable in same units as target.  
-      • **RAE (Relative Absolute Error):** Normalizes total absolute error using mean predictor.  
-      • **RSE (Relative Squared Error):** Variant of RAE, widely used for calculating R².  
-      • **R² (Coefficient of Determination):** Not error but measures how well regression line fits data.  
-
-  🔹 **Insights**
-      • MAE is intuitive, but MSE/ RMSE highlight large errors.  
-      • RMSE is preferred in practice due to interpretability in target units.  
-      • R² provides an overall model fit indicator.  
-      • Choice of metric depends on model type, dataset characteristics, and domain.  
-
-- ✅ Consolidates theoretical understanding + diagram for quick visual learning.  
-- 📘 Forms foundation for comparing model accuracy and guiding optimization in regression analysis.

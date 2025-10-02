@@ -1,0 +1,24 @@
+0.1-
+--
+The first column, is the years, and the second, is China's corresponding annual gross domestic
+income in US dollars for that year.
+This is what the data points look like.
+Now, we have a couple of interesting questions.
+First, “Can GDP be predicted based on time?”
+And second, “Can we use a simple linear regression to model it?”
+Indeed, if the data shows a curvy trend, then linear regression will not produce very accurate
+results when compared to a non-linear regression -- simply because, as the name implies, linear
+regression presumes that the data is linear.
+The scatterplot shows that there seems to be a strong relationship between GDP and time,
+but the relationship is not linear.
+As you can see, the growth starts off slowly, then from 2005 onward, the growth is very
+significant.
+And finally, it decelerates slightly in the 2010s.
+It kind of looks like either a logistical or exponential function.
+So, it requires a special estimation method of the non-linear regression procedure.
+
+For example, if we assume that the model for these data points are exponential functions,
+such as y ̂ = θ_0 + θ_1 〖θ_2〗^x, our job is to estimate the parameters of the model,
+i.e. θs, and use the fitted model to predict GDP for unknown or future cases.
+
+--------------------------------------------------------------------------------------------------
