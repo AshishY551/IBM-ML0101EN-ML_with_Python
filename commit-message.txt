@@ -1,17 +1,26 @@
-📈 Add introduction to Non-Linear Regression (Module2.10)
+📊 Expand Non-Linear Regression module with theory and visuals (Module2.10)
 
-- Added **2.10.1-Non_linear_regression.jpg** for visual reference of GDP vs Time dataset.  
-- Created **Module2.10.txt** covering:  
-  🔹 Context: China’s GDP growth over time with curvilinear trend.  
-  🔹 Key Questions:  
-      • Can GDP be predicted based on time?  
-      • Is linear regression sufficient for this dataset?  
-  🔹 Insight: Linear regression fails for non-linear patterns (GDP shows exponential/logistic growth).  
-  🔹 Explanation: Non-linear regression is required as growth accelerates after 2005 and decelerates in 2010s.  
-  🔹 Example model: Exponential form  
-      ŷ = θ₀ + θ₁ (θ₂ˣ),  
-      where θ parameters are estimated for prediction.  
+- 🖼️ Added visual illustrations:
+  • 2.10.2-Types_of_multilinear_regression.jpg — shows different multi-linear regression structures.  
+  • 2.10.3-Non_linear_regression.jpg — depicts examples of curvilinear relationships.  
+  • 2.10.4-Polynomial_regression.jpg — visualizes quadratic and cubic fits for complex trends.  
 
-- ✅ Sets the foundation for applying non-linear regression methods.  
-- 📘 Marks the transition from linear regression limitations to more complex model fitting.
+- 🧠 Updated Module2.10.txt with deeper theoretical explanations:
+  🔹 Added discussion on **exponential model form**  
+       → ŷ = θ₀ + θ₁ (θ₂ˣ), used for GDP trend prediction.  
+  🔹 Introduced the concept of **polynomial regression**, describing quadratic, cubic, and higher-degree fits.  
+       → Emphasized importance of selecting the best-fit regression type.  
+  🔹 Defined **non-linear regression** clearly:  
+       • Models non-linear relationship between dependent and independent variables.  
+       • Non-linearity refers to parameters (θ), not necessarily to features (x).  
+  🔹 Explained that **least squares** cannot directly estimate non-linear parameters.  
+  🔹 Added guidance on identifying when a problem is linear vs. non-linear:  
+       • Visual inspection of scatterplots.  
+       • Correlation coefficient check (≥ 0.7 indicates linear tendency).  
+  🔹 Concluded with modeling advice:  
+       • Use polynomial regression, non-linear models, or data transformation for non-linear trends.  
 
+- ✅ Module2.10 now provides a complete theoretical foundation connecting:
+  Linear → Multi-linear → Non-linear → Polynomial regression frameworks.
+
+- 📘 Sets up next section (Module2.11) for practical demonstration of **curve fitting & polynomial regression modeling**.
