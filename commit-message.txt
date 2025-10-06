@@ -1,26 +1,55 @@
-📊 Expand Non-Linear Regression module with theory and visuals (Module2.10)
+🧮 Added Polynomial Regression Lab (Module2.11)
 
-- 🖼️ Added visual illustrations:
-  • 2.10.2-Types_of_multilinear_regression.jpg — shows different multi-linear regression structures.  
-  • 2.10.3-Non_linear_regression.jpg — depicts examples of curvilinear relationships.  
-  • 2.10.4-Polynomial_regression.jpg — visualizes quadratic and cubic fits for complex trends.  
+📘 Module: 2.11 - Polynomial Regression
 
-- 🧠 Updated Module2.10.txt with deeper theoretical explanations:
-  🔹 Added discussion on **exponential model form**  
-       → ŷ = θ₀ + θ₁ (θ₂ˣ), used for GDP trend prediction.  
-  🔹 Introduced the concept of **polynomial regression**, describing quadratic, cubic, and higher-degree fits.  
-       → Emphasized importance of selecting the best-fit regression type.  
-  🔹 Defined **non-linear regression** clearly:  
-       • Models non-linear relationship between dependent and independent variables.  
-       • Non-linearity refers to parameters (θ), not necessarily to features (x).  
-  🔹 Explained that **least squares** cannot directly estimate non-linear parameters.  
-  🔹 Added guidance on identifying when a problem is linear vs. non-linear:  
-       • Visual inspection of scatterplots.  
-       • Correlation coefficient check (≥ 0.7 indicates linear tendency).  
-  🔹 Concluded with modeling advice:  
-       • Use polynomial regression, non-linear models, or data transformation for non-linear trends.  
+🎯 Objectives:
+- Learn how to implement Polynomial Regression using Scikit-Learn.
+- Create, train, test, and apply a regression model on real-world data.
 
-- ✅ Module2.10 now provides a complete theoretical foundation connecting:
-  Linear → Multi-linear → Non-linear → Polynomial regression frameworks.
+🧰 Sections & Key Additions:
+-------------------------------------------------
+1️⃣ Importing Libraries  
+- Added essential Python packages: matplotlib, pandas, pylab, numpy.  
+- Enabled inline visualization with %matplotlib inline.  
 
-- 📘 Sets up next section (Module2.11) for practical demonstration of **curve fitting & polynomial regression modeling**.
+2️⃣ Downloading Dataset  
+- Used wget to fetch ‘FuelConsumption.csv’ from IBM Cloud.  
+  → Dataset: Canadian light-duty vehicle fuel consumption and CO₂ emissions.  
+
+3️⃣ Data Overview  
+- Described dataset fields: MODELYEAR, MAKE, MODEL, ENGINESIZE, CYLINDERS, TRANSMISSION, etc.  
+- Emphasized the `CO2EMISSIONS` target variable.  
+- Displayed sample output (df.head()).  
+
+4️⃣ Feature Selection  
+- Selected features for regression:  
+  `ENGINESIZE`, `CYLINDERS`, `FUELCONSUMPTION_COMB`, and `CO2EMISSIONS`.  
+- Showed first 9 rows of the compact dataset.
+
+5️⃣ Data Visualization  
+- Added scatter plot: CO₂ Emissions vs Engine Size using Matplotlib.  
+  → Visual trend shows a curvilinear relationship ideal for polynomial regression.  
+
+6️⃣ Train-Test Split  
+- Randomly divided dataset: 80% for training, 20% for testing.  
+  → Introduced the concept of mutually exclusive datasets for model validation.  
+
+7️⃣ Polynomial Regression Concept  
+- Explained that when data trends are **non-linear or curved**, Polynomial Regression is more effective.  
+- Defined the second-degree model:
+  
+    𝑦 = β₀ + β₁x + β₂x²  
+
+- Introduced `PolynomialFeatures()` from scikit-learn to automatically create new features:
+  → 1, x, x², …, xⁿ for the chosen polynomial degree.  
+- Clarified that polynomial regression is a special case of multiple linear regression.
+
+-------------------------------------------------
+🧩 Outcome:
+Learners will understand:
+- How to preprocess and visualize real-world emission data.  
+- How to model curvilinear relationships using polynomial terms.  
+- The difference between linear and polynomial regression fits.  
+
+✅ Ready for next section (Module2.12): Evaluating Polynomial Regression Models 
+(e.g., plotting predictions, calculating R², MAE, and visual comparison).

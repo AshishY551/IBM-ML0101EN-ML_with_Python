@@ -1,0 +1,116 @@
+Polynomial Regression¶
+
+-
+Objectives
+After completing this lab you will be able to:
+
+Use scikit-learn to implement Polynomial Regression
+Create a model, train it, test it and use the model
+
+-------------
+1.1-#Importing Needed packages¶
+
+-
+import matplotlib.pyplot as plt
+import pandas as pd
+import pylab as pl
+import numpy as np
+%matplotlib inline
+
+---
+1.2-#Downloading Data¶
+-
+!wget -O FuelConsumption.csv https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv
+
+---
+1.3-#Understanding the Data
+FuelConsumption.csv:
+
+-
+We have downloaded a fuel consumption dataset, FuelConsumption.csv, which contains model-specific fuel consumption ratings and estimated carbon dioxide emissions for new light-duty vehicles for retail sale in Canada. Dataset source
+
+MODELYEAR e.g. 2014
+MAKE e.g. Acura
+MODEL e.g. ILX
+VEHICLE CLASS e.g. SUV
+ENGINE SIZE e.g. 4.7
+CYLINDERS e.g 6
+TRANSMISSION e.g. A6
+FUEL CONSUMPTION in CITY(L/100 km) e.g. 9.9
+FUEL CONSUMPTION in HWY (L/100 km) e.g. 8.9
+FUEL CONSUMPTION COMB (L/100 km) e.g. 9.2
+CO2 EMISSIONS (g/km) e.g. 182 --> low --> 0
+
+---------------------------------------------------------
+2.1-#Reading the data in¶
+
+-
+df = pd.read_csv("FuelConsumption.csv")
+
+# take a look at the dataset
+df.head()
+
+---output-
+
+MODELYEAR	MAKE	MODEL	VEHICLECLASS	ENGINESIZE	CYLINDERS	TRANSMISSION	FUELTYPE	FUELCONSUMPTION_CITY	FUELCONSUMPTION_HWY	FUELCONSUMPTION_COMB	FUELCONSUMPTION_COMB_MPG	CO2EMISSIONS
+0	2014	ACURA	ILX	COMPACT	2.0	4	AS5	Z	9.9	6.7	8.5	33	196
+1	2014	ACURA	ILX	COMPACT	2.4	4	M6	Z	11.2	7.7	9.6	29	221
+2	2014	ACURA	ILX HYBRID	COMPACT	1.5	4	AV7	Z	6.0	5.8	5.9	48	136
+3	2014	ACURA	MDX 4WD	SUV - SMALL	3.5	6	AS6	Z	12.7	9.1	11.1	25	255
+4	2014	ACURA	RDX AWD	SUV - SMALL	3.5	6	AS6	Z	12.1	8.7	10.6	27	244
+
+
+-----------------------------------------------------------------
+2.2-#Let's select some features that we want to use for regression.
+
+-
+cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
+cdf.head(9)
+
+--output-
+	ENGINESIZE	CYLINDERS	FUELCONSUMPTION_COMB	CO2EMISSIONS
+0	2.0	4	8.5	196
+1	2.4	4	9.6	221
+2	1.5	4	5.9	136
+3	3.5	6	11.1	255
+4	3.5	6	10.6	244
+5	3.5	6	10.0	230
+6	3.5	6	10.1	232
+7	3.7	6	11.1	255
+8	3.7	6	11.6	267
+
+-----------------------------------------------------------
+3.1-#Let's plot Emission values with respect to Engine size:
+
+-
+plt.scatter(cdf.ENGINESIZE, cdf.CO2EMISSIONS,  color='blue')
+plt.xlabel("Engine size")
+plt.ylabel("Emission")
+plt.show()
+
+
+-------------------------------------------------------
+4.1-#Creating train and test dataset
+-
+Train/Test Split involves splitting the dataset into training and testing sets respectively, which are mutually exclusive. After which, you train with the training set and test with the testing set.
+
+--
+msk = np.random.rand(len(df)) < 0.8
+train = cdf[msk]
+test = cdf[~msk]
+
+----------------------------------
+5.1= #Polynomial regression¶
+-
+Sometimes, the trend of data is not really linear, and looks curvy. In this case we can use Polynomial regression methods. In fact, many different regressions exist that can be used to fit whatever the dataset looks like, such as quadratic, cubic, and so on, and it can go on and on to infinite degrees.
+
+In essence, we can call all of these, polynomial regression, where the relationship between the independent variable x and the dependent variable y is modeled as an nth degree polynomial in x. Lets say you want to have a polynomial regression (let's make 2 degree polynomial):
+
+𝑦=𝑏+𝜃1𝑥+𝜃2𝑥2
+ 
+
+Now, the question is: how we can fit our data on this equation while we have only x values, such as Engine Size? Well, we can create a few additional features: 1,  𝑥
+ , and  𝑥2
+ .
+
+PolynomialFeatures() function in Scikit-learn library, drives a new feature sets from the original feature set. That is, a matrix will be generated consisting of all polynomial combinations of the features with degree less than or equal to the specified degree. For example, lets say the original feature set has only one feature, ENGINESIZE. Now, if we select the degree of the polynomial to be 2, then it generates 3 features, degree=0, degree=1 and degree=2:
