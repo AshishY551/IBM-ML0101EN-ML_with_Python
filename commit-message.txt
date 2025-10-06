@@ -1,55 +1,41 @@
-🧮 Added Polynomial Regression Lab (Module2.11)
+📈 Enhanced Polynomial Regression Lab (Module2.11)
 
-📘 Module: 2.11 - Polynomial Regression
+🧮 Added practical model fitting, visualization, and evaluation steps.
 
-🎯 Objectives:
-- Learn how to implement Polynomial Regression using Scikit-Learn.
-- Create, train, test, and apply a regression model on real-world data.
-
-🧰 Sections & Key Additions:
+🔹 Key Additions:
 -------------------------------------------------
-1️⃣ Importing Libraries  
-- Added essential Python packages: matplotlib, pandas, pylab, numpy.  
-- Enabled inline visualization with %matplotlib inline.  
+✅ Introduced the concept of Polynomial Regression:
+   - Explained curvy trends and higher-degree polynomial modeling.
+   - Provided mathematical form: y = β₀ + β₁x + β₂x².
 
-2️⃣ Downloading Dataset  
-- Used wget to fetch ‘FuelConsumption.csv’ from IBM Cloud.  
-  → Dataset: Canadian light-duty vehicle fuel consumption and CO₂ emissions.  
+✅ Demonstrated Polynomial Feature Generation:
+   - Used scikit-learn's PolynomialFeatures() for degree=2 expansion.
+   - Included transformation output example (x⁰, x¹, x² features).
+   - Explained matrix visualization and relation to Multiple Linear Regression.
 
-3️⃣ Data Overview  
-- Described dataset fields: MODELYEAR, MAKE, MODEL, ENGINESIZE, CYLINDERS, TRANSMISSION, etc.  
-- Emphasized the `CO2EMISSIONS` target variable.  
-- Displayed sample output (df.head()).  
+✅ Model Fitting:
+   - Implemented using LinearRegression() from sklearn.
+   - Displayed Coefficients & Intercept:
+       → Coefficients: [[ 0.  51.21  -1.63 ]]
+       → Intercept: [106.62]
+   - Clarified that Polynomial Regression is a *special case* of Linear Regression.
 
-4️⃣ Feature Selection  
-- Selected features for regression:  
-  `ENGINESIZE`, `CYLINDERS`, `FUELCONSUMPTION_COMB`, and `CO2EMISSIONS`.  
-- Showed first 9 rows of the compact dataset.
+✅ Visualization:
+   - Plotted CO₂ Emissions vs Engine Size.
+   - Added polynomial curve fitting (red line) over training data scatter.
 
-5️⃣ Data Visualization  
-- Added scatter plot: CO₂ Emissions vs Engine Size using Matplotlib.  
-  → Visual trend shows a curvilinear relationship ideal for polynomial regression.  
-
-6️⃣ Train-Test Split  
-- Randomly divided dataset: 80% for training, 20% for testing.  
-  → Introduced the concept of mutually exclusive datasets for model validation.  
-
-7️⃣ Polynomial Regression Concept  
-- Explained that when data trends are **non-linear or curved**, Polynomial Regression is more effective.  
-- Defined the second-degree model:
-  
-    𝑦 = β₀ + β₁x + β₂x²  
-
-- Introduced `PolynomialFeatures()` from scikit-learn to automatically create new features:
-  → 1, x, x², …, xⁿ for the chosen polynomial degree.  
-- Clarified that polynomial regression is a special case of multiple linear regression.
+✅ Model Evaluation:
+   - Used r2_score and error metrics:
+       • Mean Absolute Error: 22.60  
+       • MSE: 880.25  
+       • R² Score: 0.76
+   - Highlighted interpretation of fit accuracy.
 
 -------------------------------------------------
-🧩 Outcome:
-Learners will understand:
-- How to preprocess and visualize real-world emission data.  
-- How to model curvilinear relationships using polynomial terms.  
-- The difference between linear and polynomial regression fits.  
+🎯 Outcome:
+Learners now understand:
+- How to construct, fit, and visualize polynomial regression models.
+- How feature transformation works in scikit-learn.
+- How to measure model accuracy using regression metrics.
 
-✅ Ready for next section (Module2.12): Evaluating Polynomial Regression Models 
-(e.g., plotting predictions, calculating R², MAE, and visual comparison).
+
