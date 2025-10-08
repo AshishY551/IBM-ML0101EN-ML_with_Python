@@ -1,41 +1,36 @@
-📈 Enhanced Polynomial Regression Lab (Module2.11)
+🔺 Extended Polynomial Regression with Degree-3 Model (Module2.11)
 
-🧮 Added practical model fitting, visualization, and evaluation steps.
+🚀 Enhancement Summary:
+-----------------------------------------
+✅ Added Polynomial Regression (degree=3) implementation:
+   - Generated new feature set using PolynomialFeatures(degree=3)
+   - Fitted model using sklearn LinearRegression()
 
-🔹 Key Additions:
--------------------------------------------------
-✅ Introduced the concept of Polynomial Regression:
-   - Explained curvy trends and higher-degree polynomial modeling.
-   - Provided mathematical form: y = β₀ + β₁x + β₂x².
+✅ Model Training:
+   - train_x transformed → train_x_poly3
+   - Coefficients and Intercept printed for inspection:
+       → clf3.coef_, clf3.intercept_
+   - Visualized cubic regression curve (red line) overlayed on training scatter plot.
 
-✅ Demonstrated Polynomial Feature Generation:
-   - Used scikit-learn's PolynomialFeatures() for degree=2 expansion.
-   - Included transformation output example (x⁰, x¹, x² features).
-   - Explained matrix visualization and relation to Multiple Linear Regression.
+✅ Evaluation Metrics Added:
+   - Mean Absolute Error (MAE)
+   - Mean Squared Error (MSE)
+   - R² Score for performance comparison
 
-✅ Model Fitting:
-   - Implemented using LinearRegression() from sklearn.
-   - Displayed Coefficients & Intercept:
-       → Coefficients: [[ 0.  51.21  -1.63 ]]
-       → Intercept: [106.62]
-   - Clarified that Polynomial Regression is a *special case* of Linear Regression.
+🧠 Purpose:
+   - Demonstrates higher-degree polynomial curve fitting.
+   - Allows learners to compare linear, quadratic, and cubic regression fits.
+   - Highlights trade-offs in model complexity vs. accuracy.
 
-✅ Visualization:
-   - Plotted CO₂ Emissions vs Engine Size.
-   - Added polynomial curve fitting (red line) over training data scatter.
+📊 Results:
+   - Visual comparison of curvature improvements over quadratic fit.
+   - Quantitative metrics indicate better fit (higher R², lower MAE/MSE).
 
-✅ Model Evaluation:
-   - Used r2_score and error metrics:
-       • Mean Absolute Error: 22.60  
-       • MSE: 880.25  
-       • R² Score: 0.76
-   - Highlighted interpretation of fit accuracy.
-
--------------------------------------------------
+-----------------------------------------
 🎯 Outcome:
-Learners now understand:
-- How to construct, fit, and visualize polynomial regression models.
-- How feature transformation works in scikit-learn.
-- How to measure model accuracy using regression metrics.
+Students now understand:
+- How to build and visualize polynomial models of degree 3.
+- How increasing polynomial degree affects model flexibility and performance.
+- How to evaluate and compare regression models with consistent metrics.
 
-
+📈 Next step: Introduce overfitting concept and performance comparison table in Module2.12.
