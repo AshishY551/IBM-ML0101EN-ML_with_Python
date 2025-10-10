@@ -1,36 +1,59 @@
-🔺 Extended Polynomial Regression with Degree-3 Model (Module2.11)
+🧮 Added Full Non-Linear Regression Lab (lab4.txt) with Theory, Code, and Visuals
 
-🚀 Enhancement Summary:
------------------------------------------
-✅ Added Polynomial Regression (degree=3) implementation:
-   - Generated new feature set using PolynomialFeatures(degree=3)
-   - Fitted model using sklearn LinearRegression()
+📂 Added new visual assets for conceptual and implementation clarity:
+  • 1.1-non_linear_regression.jpg — introduction to non-linear regression
+  • 1.2-Quadratic_function_regression.jpg — quadratic function illustration
+  • 1.3-Exponential_function_regression.jpg — exponential regression example
+  • 1.4-Log_function_regression.jpg — logarithmic regression visualization
+  • 1.5-Sigmoidal_Logistic_regression.jpg — S-shaped logistic curve visualization
+  • 1.6-Nonlinear_regression.jpg — comparison of linear vs non-linear fits
+  • 1.7-Logistic_function.jpg — logistic function shape and formula
+  • 1.8-Finding_best_parameters.jpg — parameter optimization concept
+  • 1.9-Plot_final_regression_model.jpg — visual of the final fitted curve
 
-✅ Model Training:
-   - train_x transformed → train_x_poly3
-   - Coefficients and Intercept printed for inspection:
-       → clf3.coef_, clf3.intercept_
-   - Visualized cubic regression curve (red line) overlayed on training scatter plot.
+🧠 Added lab4.txt: 'Non-Linear Regression Analysis'
+  - Structured with Markdown-style sections for readability and reproducibility.
+  - Includes both **conceptual and practical** understanding of non-linear regression.
 
-✅ Evaluation Metrics Added:
-   - Mean Absolute Error (MAE)
-   - Mean Squared Error (MSE)
-   - R² Score for performance comparison
+📘 Key Sections Added:
+  1️⃣ **Objectives**
+     - Differentiate between linear and non-linear regression
+     - Implement non-linear regression model using Python
 
-🧠 Purpose:
-   - Demonstrates higher-degree polynomial curve fitting.
-   - Allows learners to compare linear, quadratic, and cubic regression fits.
-   - Highlights trade-offs in model complexity vs. accuracy.
+  2️⃣ **Introductory Concepts**
+     - Explanation of linear vs. non-linear model assumptions
+     - Description of curvy trends where linear regression fails
 
-📊 Results:
-   - Visual comparison of curvature improvements over quadratic fit.
-   - Quantitative metrics indicate better fit (higher R², lower MAE/MSE).
+  3️⃣ **Practical Demonstrations**
+     - Importing core libraries (`numpy`, `matplotlib`, `pandas`, `scipy`)
+     - Visualization of various non-linear functions:
+       • Cubic  
+       • Quadratic  
+       • Exponential  
+       • Logarithmic  
+       • Sigmoidal (Logistic)
+     - Interactive plotting examples for each function with labeled axes.
 
------------------------------------------
-🎯 Outcome:
-Students now understand:
-- How to build and visualize polynomial models of degree 3.
-- How increasing polynomial degree affects model flexibility and performance.
-- How to evaluate and compare regression models with consistent metrics.
+  4️⃣ **China GDP Non-Linear Regression Case Study**
+     - Real dataset import via `wget` from IBM Skills Network
+     - Data preview and exploration
+     - Visualization of GDP trend (1960–2014)
+     - Selection of logistic regression model for fitting
+     - Explanation of logistic function and parameter roles (β₁, β₂)
+     - Model initialization and plotting sample sigmoid curve
+     - Data normalization for numerical stability
+     - Parameter optimization using `scipy.optimize.curve_fit`
+     - Model evaluation and visualization of fitted vs. actual data
 
-📈 Next step: Introduce overfitting concept and performance comparison table in Module2.12.
+  5️⃣ **Outputs**
+     - Display of optimized β₁ and β₂ parameters
+     - Final model plotted for GDP vs. Year, with legend and labeling.
+
+✅ Outcome:
+  - Learners can now clearly understand how to model non-linear relationships.
+  - Demonstrates how to fit real-world data (GDP) using logistic regression.
+  - Provides a complete lab ready for submission or extension into advanced curve fitting.
+
+🚀 Next Step:
+  - Prepare `lab5.txt`: *Polynomial Regression in Practice* — to extend this module into multi-degree regression modeling and comparison with non-linear models.
+
